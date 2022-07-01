@@ -40,8 +40,9 @@ for (int i = 0; i < 10; i++)
 
     Console.WriteLine("[SCORE] -- Player: {0} / Opponent {1}", playerPoints, opponentPoints);
     Console.WriteLine("\n");
-}
 
+
+};
 if (playerPoints > opponentPoints)
 {
     Console.WriteLine("You win!");
@@ -51,13 +52,13 @@ if (playerPoints < opponentPoints)
 {
     Console.WriteLine("Opponent wins!");
 }
+
 if (playerPoints == opponentPoints)
 {
     Console.WriteLine("Its a Draw");
 }
 
 Console.ReadKey();
-
 
 
 
