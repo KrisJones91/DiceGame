@@ -52,7 +52,6 @@ if (playerPoints < opponentPoints)
 {
     Console.WriteLine("Opponent wins!");
 }
-
 if (playerPoints == opponentPoints)
 {
     Console.WriteLine("Its a Draw");
