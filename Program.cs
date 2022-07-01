@@ -5,7 +5,6 @@ int opponentRandomNum;
 int playerPoints = 0;
 int opponentPoints = 0;
 
-
 Random random = new Random();
 
 
@@ -39,9 +38,24 @@ for (int i = 0; i < 10; i++)
         Console.WriteLine("It's a DRAW!!");
     }
 
-    Console.WriteLine("The score is now ~ Player: {0} - Opponent {1}", playerPoints, opponentPoints);
+    Console.WriteLine("[SCORE] -- Player: {0} / Opponent {1}", playerPoints, opponentPoints);
     Console.WriteLine("\n");
 }
+
+if (playerPoints > opponentPoints)
+{
+    Console.WriteLine("You win!");
+}
+
+if (playerPoints < opponentPoints)
+{
+    Console.WriteLine("Opponent wins!");
+}
+if (playerPoints == opponentPoints)
+{
+    Console.WriteLine("Its a Draw");
+}
+
 Console.ReadKey();
 
 
